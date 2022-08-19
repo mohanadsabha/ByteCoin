@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         currencyPicker.delegate = self
         coinManager.delegate = self
     }
-    
 }
 
 // MARK: - UIPickerView
@@ -59,7 +58,7 @@ extension ViewController: CoinManagerDelegate {
     }
     
     func didFailWithError(error: Error?) {
-        print(error)
+        print(error ?? "Unknown error")
     }
     
     
